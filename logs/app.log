@@ -1,0 +1,74 @@
+2020-05-22 12:38:37,181 INFO E.Tesbo [main] **************************************** New Build Start ******************************************
+2020-05-22 12:38:37,196 INFO E.Tesbo [main] List of arguments: [Ljava.lang.String;@79c7532f
+2020-05-22 12:38:37,267 INFO E.Tesbo [main] -----------------------------------------------------------------------
+2020-05-22 12:38:37,267 INFO E.Tesbo [main] Build execution Started
+2020-05-22 12:38:37,267 INFO E.Tesbo [main] -----------------------------------------------------------------------
+2020-05-22 12:38:37,281 INFO E.Tesbo [main] Generate Report Directory
+2020-05-22 12:38:37,298 INFO E.Tesbo [main] Get build report name: buildResult_1
+2020-05-22 12:38:37,307 INFO E.Tesbo [main] Verify config file path validation
+2020-05-22 12:38:37,309 INFO E.Tesbo [main] Get cloud integration build key
+2020-05-22 12:38:38,145 INFO E.Tesbo [main] Environment is null
+2020-05-22 12:38:38,145 INFO E.Tesbo [main] Start build execution with base URL
+2020-05-22 12:38:38,145 INFO E.Tesbo [main] Start verify necessary validation before start execution
+2020-05-22 12:38:38,146 INFO f.Validation [main] Validation for Project Directory Path is empty or not
+2020-05-22 12:38:38,147 INFO f.Validation [main] Validation for TestsDirectory Path is empty or not
+2020-05-22 12:38:38,147 INFO f.Validation [main] Validation for locatorDirectory Path is empty or not
+2020-05-22 12:38:38,148 INFO f.Validation [main] Validation for baseUrl
+2020-05-22 12:38:38,149 INFO f.Validation [main] Validation for browser details
+2020-05-22 12:38:38,150 INFO f.Validation [main] Validation for Tag and suite is exist or not
+2020-05-22 12:38:38,168 INFO f.Validation [main] Validation for parallel execution
+2020-05-22 12:38:38,169 INFO f.Validation [main] Validation for locator types
+2020-05-22 12:38:38,170 INFO E.Tesbo [main] Start run parallel execution builder
+2020-05-22 12:38:38,171 INFO E.Tesbo [main] Test is run by tag
+2020-05-22 12:38:38,171 INFO E.Tesbo [main] Tag List: ["click124"]
+2020-05-22 12:38:38,191 INFO f.TestExecutor [pool-2-thread-1] Test is run with single session
+2020-05-22 12:38:38,192 INFO f.TestExecutor [pool-2-thread-1] Start Browser: chrome
+2020-05-22 12:38:47,751 INFO f.TestExecutor [pool-2-thread-1] Start browser with 'https://www.phptravels.net/admin' URL
+2020-05-22 12:38:47,756 INFO f.TestExecutor [pool-2-thread-1] Test: Verify click functionality
+2020-05-22 12:38:47,762 INFO f.TestExecutor [pool-2-thread-1] Step: Open https://www.phptravels.net/admin
+2020-05-22 12:38:47,765 INFO f.TestExecutor [pool-2-thread-1] Get severity and priority for test is: false
+2020-05-22 12:38:47,768 INFO f.TestExecutor [pool-2-thread-1] Before test functionality is exist or not in tests file: false
+2020-05-22 12:38:47,769 INFO f.TestExecutor [pool-2-thread-1] Get steps for Verify click functionality test from Click.tests tests file
+2020-05-22 12:38:47,770 INFO f.TestExecutor [pool-2-thread-1] Verify click functionality test has 4 steps
+2020-05-22 12:38:47,772 INFO f.StepParser [pool-2-thread-1] Step: Click on ForgotPassword
+2020-05-22 12:39:00,410 INFO f.StepParser [pool-2-thread-1] Step: pause 2 sec
+2020-05-22 12:39:02,418 INFO f.StepParser [pool-2-thread-1] Step: Click on BackButton
+2020-05-22 12:39:09,541 ERROR f.TestExecutor [pool-2-thread-1] Failed
+2020-05-22 12:39:09,541 ERROR f.TestExecutor [pool-2-thread-1] org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="ladda-label" style="background: yellow; border: 2px solid red;">...</span> is not clickable at point (720, 471). Other element would receive the click: <body>...</body>
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'abcs-Air', ip: '2405:205:c828:385a:4cc9:7766:d4e8:a8cb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '11.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: /var/folders/kj/x6t6gvk50j9...}, goog:chromeOptions: {debuggerAddress: localhost:60002}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c26d4516a76579bb518541fb84675a3c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at framework.StepParser.parseStep(StepParser.java:73)
+	at framework.TestExecutor.runTest(TestExecutor.java:333)
+	at framework.TestExecutor.run(TestExecutor.java:636)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2020-05-22 12:39:10,914 ERROR f.TestExecutor [pool-2-thread-1] Capture screenshot: screenshots/Click.t_Verifyclickfunctionality_20200522123910.png
+2020-05-22 12:39:18,413 INFO f.TestExecutor [pool-2-thread-1] Close browser
+2020-05-22 12:39:18,413 INFO E.Tesbo [main] Create fail test queue list
+2020-05-22 12:39:18,414 INFO E.Tesbo [main] Number of fail test is 1
+2020-05-22 12:39:18,415 INFO E.Tesbo [main] Number retry analyser is 0
+2020-05-22 12:39:21,843 INFO E.Tesbo [main] ***********************************************************************************************************************
+2020-05-22 12:39:21,856 INFO E.Tesbo [main] Total Run Test: 1
+2020-05-22 12:39:21,857 INFO E.Tesbo [main] Total Passed Test: 0
+2020-05-22 12:39:21,858 INFO E.Tesbo [main] Total Failed Test: 1
+2020-05-22 12:39:21,859 INFO E.Tesbo [main] Total Time To Run Test: 00 H 00 M 41 S |
+
+2020-05-22 12:39:21,859 INFO E.Tesbo [main] *********************************************** Build Execution Completed ***********************************************
